@@ -23,11 +23,13 @@ public class HackerNewServlet extends javax.servlet.http.HttpServlet {
                         "<head>" +
                         "  <title>" + title + "</title>" +
                         "  <link rel=\"stylesheet\" type=\"text/css\" href='/static/css/site.css' />" +
+                        " <script src=\"/static/js/main.js\"></script> " +
                         "</head>\n" +
                         "<body>\n" +
                         "<h1 align = \"center\">" + title + "</h1>\n" +
                         "<ul>\n" +
-                        "<li><b>First Name</b>: " + request.getParameter("first_name") + "\n" +
+                        "<li><a href=\"javascript:getBlankPage()\" >Welcome page</a>" +
+                        "<li><a href=\"javascript:getHacksonNews()\" >Hackson news</a>" +
                         "<li><b>Last Name</b>: " + request.getParameter("last_name") + "\n" +
                         "</ul>\n" +
                         "<div class='visit'>You can serve any static content from <span class='folder'>webapp/static</span> folder, like a css file.</div>" +
